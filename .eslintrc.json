@@ -1,0 +1,40 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "extends": ["eslint:all", "plugin:react/all", "plugin:prettier/recommended"],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "plugins": ["react", "react-hooks", "prettier"],
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "semi-colons": true,
+        "singleQuote": true,
+        "trailingCommas": "es5"
+      }
+    ],
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "indent": ["error", 2],
+    "linebreak-style": ["error", "unix"],
+    "object-curly-spacing": ["error", "always"],
+    "space-before-function-paren": [
+      "error",
+      { "anonymous": "always", "named": "never", "asyncArrow": "always" }
+    ],
+    "quotes": ["error", "single"],
+    "quote-props": ["error", "as-needed"],
+    "padded-blocks": ["error", "never"],
+    "react/jsx-no-literals": 0,
+    "react/jsx-one-expression-per-line": [1, { "allow": "single-child" }],
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn"
+  }
+}
