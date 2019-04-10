@@ -3,7 +3,7 @@
     "browser": true,
     "es6": true
   },
-  "extends": ["eslint:all", "plugin:react/all", "plugin:prettier/recommended"],
+  "extends": ["eslint:recommended", "plugin:react/recommended", "plugin:prettier/recommended"],
   "parserOptions": {
     "ecmaFeatures": {
       "jsx": true
@@ -23,7 +23,7 @@
     ],
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
     "indent": ["error", 2],
-    "linebreak-style": ["error", "unix"],
+    "linebreak-style": ["error", "windows"],
     "object-curly-spacing": ["error", "always"],
     "space-before-function-paren": [
       "error",
